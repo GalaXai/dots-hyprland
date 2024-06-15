@@ -12,7 +12,6 @@ a lot of keybinds
 try btop \
 kitty <- remove foot \
 bash <- remove fish\ 
-change from yay to paru < this might involve chaning the script  \
 
 
 ## Things i want later

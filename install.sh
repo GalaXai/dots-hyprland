@@ -61,7 +61,7 @@ if ! command -v yay >/dev/null 2>&1;then
     echo -e "\e[33mIt is not recommended to use \"paru\" as warned in Hyprland Wiki:\e[0m"
     echo -e "\e[33m    \"If you are using the AUR (hyprland-git) package, you will need to cleanbuild to update the package. Paru has been problematic with updating before, use Yay.\"\e[0m"
     echo -e "\e[33mReference: https://wiki.hyprland.org/FAQ/#how-do-i-update\e[0m"
-    if $ask;then
+    if $ask;then  
       printf "Install \"yay\"?\n"
       printf "  y = Yes, install \"yay\" for me first. (DEFAULT)\n"
       printf "  n = No, use \"paru\" at my own risk.\n"
@@ -143,7 +143,7 @@ case $SKIP_PYMYC_AUR in
   *)
 	  pymycinstallflags="--clean"
 	  $ask && showfun install-local-pkgbuild || pymycinstallflags="$installflags --noconfirm"
-	  v install-local-pkgbuild "./arch-packages/illogical-impulse-pymyc-aur" "$pymycinstallflags"
+	  v $AUR_HELPER install-local-pkgbuild "./arch-packages/illogical-impulse-pymyc-aur" "$pymycinstallflags"
     ;;
 esac
 
