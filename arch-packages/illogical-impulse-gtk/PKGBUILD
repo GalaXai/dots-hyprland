@@ -10,6 +10,8 @@ depends=(
 	gtk3
 	gtksourceview3
 	gobject-introspection
+	glib2
+	glib2-devel
 	upower
 	yad
 	ydotool
