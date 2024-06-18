@@ -305,7 +305,8 @@ $bar_ws_width_focus_active: 2.045rem;
 
 .corner {
     background-color: $layer0;
-    @include large-rounding;
+    // @include large-rounding; // REMOVE ROUND CORNERS
+    border-radius: 1rem;
 }
 
 .corner-black {
